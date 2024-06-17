@@ -13,7 +13,7 @@ export default function useTestHook() {
     const getData = async () => {
         try {
             setIsLoading(true);
-            const { data: res } = await Api.get("skabelon");
+            const { data: res } = await Api.get("products");
             setData(res);
         } catch (e) {
             console.error(e);
